@@ -1,7 +1,7 @@
 # MerlinSuite
 C2C Framework for kali linux working with reverse powershells
 
-A new fukky undetected payload generator a multilistener with build in commands for uploading,
+A new fully undetected payload generator a multilistener with build in commands for uploading,
 downloading files, keylogger, webcam access, ransomware function to encrypt and decrypt all files,
 zip files and folders, steal all browserdata on all browsers(credit cards, passwords, coockies,...)
 ....
