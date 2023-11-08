@@ -43,6 +43,7 @@ With this feature, files and folders on the infected system can be compressed an
 facilitates the transfer of large amounts of data and concealing malicious content.
 
 # Video at https://t.me/exploiting_systems
+# or on youtube: https://youtu.be/e6Bsbpat5v0
 
 Website:
 # http://s75pg5hp2u3lhanfm4rhuel4rbj2qpxo4ykcdzcoyrlhoxjcjbfbofid.onion
