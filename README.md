@@ -42,6 +42,11 @@ Zip Function for Files and Folders:
 With this feature, files and folders on the infected system can be compressed and packed into zip archives. This
 facilitates the transfer of large amounts of data and concealing malicious content.
 
+The Listener runs on port 4443
+The port for downloading files is 55555
+The Webserver runs on port 8080
+(no sudo rights are neccesary to run the program, only on installation)
+
 # Video at https://t.me/exploiting_systems
 # or on youtube: https://youtu.be/e6Bsbpat5v0
 
