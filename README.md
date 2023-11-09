@@ -10,8 +10,12 @@ explores a C2 framework that offers various advanced features, including upload 
 browser data theft, keylogger functionality, webcam access, ransomware capability, automatic port-forwarding
 tunnels through the Tor network, and a zip function for files and folders.
 
+Powershell access
+
+Built in mass ip and port scanner to scan the targets network.
+
 Undetected Payload generator:
-This C2 Framework has a built in payload generator for undetected payloads
+This C2 Framework has a built in payload generator for undetected payloads.
 
 Upload and Download Functions:
 This C2 framework allows the attacker to upload and download files to and from the infected system. These
