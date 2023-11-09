@@ -23,7 +23,7 @@ functions can be used for distributing malware or exfiltrating sensitive data.
 
 Steal Browser Data Function:
 An extremely invasive feature of this framework is the ability to steal browser data from infected systems.
-This includes bookmarks, passwords, credit cards and browsing history. The stolen information can be used
+This includes bookmarks, coockies, passwords, credit cards and browsing history. The stolen information can be used
 for identity theft or other malicious purposes.
 
 Keylogger Function:
