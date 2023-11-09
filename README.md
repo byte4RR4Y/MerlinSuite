@@ -52,7 +52,7 @@ The Webserver runs on port 8080
 (no sudo rights are neccesary to run the program, only on installation)
 
 # Video at https://t.me/exploiting_systems
-# or on youtube: https://youtu.be/e6Bsbpat5v0
+#          https://nameless-breeze-96171.pktriot.net
 
 Website:
 # http://s75pg5hp2u3lhanfm4rhuel4rbj2qpxo4ykcdzcoyrlhoxjcjbfbofid.onion
