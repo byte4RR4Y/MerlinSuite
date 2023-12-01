@@ -1,7 +1,7 @@
 # MerlinSuite
 -------------------------------------------------------------------------------------------------------------
 # A Command and Control (C2) Framework
-# with Advanced Features for debian based Linux distributions
+# with Advanced Features for Windows, Linux, MacOS, and rooted android(requires terminal like Termux)
 
 In today's digital world, the development of Command and Control (C2) frameworks has become a significant
 aspect of cybercrime and security research. These frameworks offer the ability to control and monitor computer
