@@ -51,4 +51,4 @@ The port for downloading files is 55555
 The Webserver runs on port 8080
 (no sudo rights are neccesary to run the program, only on installation)
 
-# Video at https://affectionate-sun-79370.pktriot.net
+# Video at t.me/exploiting_systems
