@@ -79,7 +79,7 @@ tunnels through the Tor network, and a zip function for files and folders.
 
 
 # SESSION COMMANDS:
-
+-------------------------------------------------------------------------------------------------------
 download <filename>                  e.g.: download picture.jpg
 upload <absolute_path_to_file>       e.g.: upload /home/user/Pictures/picture.jpg
 keylogger start                      Starts keylogger [requires python]
@@ -94,7 +94,7 @@ portscan <IPRange> <PortRange|List>  portscanner 1.0.0.0-1.1.255.255 1-1024 or 1
 encrypt files                        encrypts all user files,downloads encryption_key
 patch amsi                           [ON WINDOWS] Patch the AMSI for the current Session
 back                                 back to main menu
-
+-------------------------------------------------------------------------------------------------------
 
 The Listener runs on port 4443
 The port for downloading files is 55555
