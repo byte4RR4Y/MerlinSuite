@@ -1,6 +1,6 @@
 # MerlinSuite
 -------------------------------------------------------------------------------------------------------------
-# A Command and Control (C2) Framework
+# A Command and Control (C2) Framework, with teamserver and clients
 # with Advanced Features for Windows, Linux, MacOS, and rooted android(requires terminal like Termux)
 
 In today's digital world, the development of Command and Control (C2) frameworks has become a significant
