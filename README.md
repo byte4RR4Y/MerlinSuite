@@ -80,20 +80,20 @@ tunnels through the Tor network, and a zip function for files and folders.
 
 # SESSION COMMANDS:
 -------------------------------------------------------------------------------------------------------
-download <filename>                  e.g.: download picture.jpg
-upload <absolute_path_to_file>       e.g.: upload /home/user/Pictures/picture.jpg
-keylogger start                      Starts keylogger [requires python]
-keylogger download                   Downloads the keys.txt file from keylogger
-compress <filename/foldername>       compress file or folder, can't zip empty folders
-install winget                       [ON WINDOWS]
-install python                       [ON WINDOWS] [requires winget]
-steal browserdata1                   Sometimes not working, but works on all browsers.
-steal browserdata2                   [ON WINDOWS]all browsers, except firefox [requires python]
-steal firefox                        [ON WINDOWS]steal passwords from firefox [requires python]
-portscan <IPRange> <PortRange|List>  portscanner 1.0.0.0-1.1.255.255 1-1024 or 1,2,3
-encrypt files                        encrypts all user files,downloads encryption_key
-patch amsi                           [ON WINDOWS] Patch the AMSI for the current Session
-back                                 back to main menu
+    download <filename>                  e.g.: download picture.jpg
+    upload <absolute_path_to_file>       e.g.: upload /home/user/Pictures/picture.jpg
+    keylogger start                      Starts keylogger [requires python]
+    keylogger download                   Downloads the keys.txt file from keylogger
+    compress <filename/foldername>       compress file or folder, can't zip empty folders
+    install winget                       [ON WINDOWS]
+    install python                       [ON WINDOWS] [requires winget]
+    steal browserdata1                   Sometimes not working, but works on all browsers.
+    steal browserdata2                   [ON WINDOWS]all browsers, except firefox [requires python]
+    steal firefox                        [ON WINDOWS]steal passwords from firefox [requires python]
+    portscan <IPRange> <PortRange|List>  portscanner 1.0.0.0-1.1.255.255 1-1024 or 1,2,3
+    encrypt files                        encrypts all user files,downloads encryption_key
+    patch amsi                           [ON WINDOWS] Patch the AMSI for the current Session
+    back                                 back to main menu
 -------------------------------------------------------------------------------------------------------
 
 The Listener runs on port 4443
