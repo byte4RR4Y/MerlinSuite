@@ -10,41 +10,91 @@ explores a C2 framework that offers various advanced features, including upload 
 browser data theft, keylogger functionality, webcam access, ransomware capability, automatic port-forwarding
 tunnels through the Tor network, and a zip function for files and folders.
 
-Powershell access
+1. **TLS Configuration:**
+   - The program generates a TLS configuration to secure the communication between the server and clients.
 
-Built in mass ip and port scanner to scan the targets network.
+2. **Credentials Handling:**
+   - User credentials (username and password) are stored in a `config.json` file.
+   - The `readCredentials` function retrieves credentials based on the provided username.
 
-Undetected Payload generator:
-This C2 Framework has a built in payload generator for undetected payloads.
+3. **Environment Variables and Configuration:**
+   - The program reads environment variables from a `.env` file or prompts the user for values if they are not set.
+   - The `generateTLSConfig` function creates TLS certificates for secure communication.
 
-Upload and Download Functions:
-This C2 framework allows the attacker to upload and download files to and from the infected system. These
-functions can be used for distributing malware or exfiltrating sensitive data.
+4. **Interactive Session Management:**
+   - The program supports multiple reverse connections, each represented by a `ReverseSession` struct.
+   - It maintains a list of active and inactive reverse connections.
+   - Users can interact with active reverse connections through a menu system.
+   - Authentication is performed using a username/password combination.
+   - The `serverMenu` function provides a menu for interacting with the reverse connections.
 
-Steal Browser Data Function:
-An extremely invasive feature of this framework is the ability to steal browser data from infected systems.
-This includes bookmarks, coockies, passwords, credit cards and browsing history. The stolen information can be used
-for identity theft or other malicious purposes.
+5. **File Transfer:**
+   - Clients can download files from the remote host using the `download` command.
+   - Clients can upload files to the remote host using the `upload` command.
 
-Keylogger Function:
-The C2 framework includes a keylogger function, enabling the recording of user keystrokes. This allows the
-attacker to intercept sensitive information like passwords, credit card details, and confidential communication.
+6. **HTTP Server:**
+   - An HTTP server is started to serve files from the "payload" directory.
 
-Webcam Access: A particularly concerning feature of this framework is the ability to access the infected
-system's webcam. This allows the attacker to surreptitiously monitor and record video and audio of the victims.
+7. **Dynamic Loading of Environment Variables:**
+   - Users can choose to load old environment variables from a previous `.env` file.
 
-Ransomware Function: The C2 framework contains a ransomware function that encrypts files on the infected system
-and demands a ransom. Ransomware attacks are one of the most significant threats to data security and can cause
-substantial harm.
+8. **Client Communication:**
+   - The program listens for both client and reverse connections simultaneously.
 
-Automatic Port Forwarding through the Tor Network:
-To maintain anonymity and evade detection, the framework can automatically set up port-forwarding tunnels through
-the Tor network. This enables the attacker to establish connections to and from infected systems without being
-easily identified.
+9. **Command Execution:**
+   - The program supports executing arbitrary commands on connected clients.
+   - Specific commands are tailored for different operating systems (Windows and Linux).
 
-Zip Function for Files and Folders:
-With this feature, files and folders on the infected system can be compressed and packed into zip archives. This
-facilitates the transfer of large amounts of data and concealing malicious content.
+10. **Security Measures:**
+    - The program checks for existing users and prevents multiple logins with the same credentials.
+    - TLS is used to encrypt communication between the server and clients.
+
+11. **Port Scanning:**
+    - Clients can initiate port scans using the `portscan` command.
+
+12. **File Compression:**
+    - Clients can compress files or folders using the `compress` command.
+
+13. **Help Menu:**
+    - Clients can access a help menu (`help` command) to understand available commands.
+
+14. **Additional Features:**
+    - The program has features like keylogger management, browser data stealing, and more.
+    - There are commands for installing software (e.g., Python, Winget) on Windows clients.
+
+15. **Concurrent Execution:**
+    - Goroutines are used for concurrent execution of various tasks.
+
+16. **File Encryption and Patching AMSI:**
+    - The program includes commands for file encryption and patching the AMSI (Anti-Malware Scan Interface) on Windows.
+
+17. **Web Server for File Retrieval:**
+    - An HTTP server is started to serve files from the "payload" directory.
+
+18. **Dynamic IP Configuration:**
+    - The server allows dynamic configuration of IP addresses through user input or environment variables.
+
+19. **Remote OS Detection:**
+    - The server attempts to detect the operating system of connected remote hosts.
+
+
+# SESSION COMMANDS:
+
+download <filename>                  e.g.: download picture.jpg
+upload <absolute_path_to_file>       e.g.: upload /home/user/Pictures/picture.jpg
+keylogger start                      Starts keylogger [requires python]
+keylogger download                   Downloads the keys.txt file from keylogger
+compress <filename/foldername>       compress file or folder, can't zip empty folders
+install winget                       [ON WINDOWS]
+install python                       [ON WINDOWS] [requires winget]
+steal browserdata1                   Sometimes not working, but works on all browsers.
+steal browserdata2                   [ON WINDOWS]all browsers, except firefox [requires python]
+steal firefox                        [ON WINDOWS]steal passwords from firefox [requires python]
+portscan <IPRange> <PortRange|List>  portscanner 1.0.0.0-1.1.255.255 1-1024 or 1,2,3
+encrypt files                        encrypts all user files,downloads encryption_key
+patch amsi                           [ON WINDOWS] Patch the AMSI for the current Session
+back                                 back to main menu
+
 
 The Listener runs on port 4443
 The port for downloading files is 55555
